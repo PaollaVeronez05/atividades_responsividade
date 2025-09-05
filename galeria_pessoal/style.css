@@ -1,0 +1,75 @@
+.container{
+    display: flex;
+    /* Ativda o flxbox para organizar os elementos 
+    filho na linha*/
+    flex-wrap: wrap; /* Faz os itensquebrarem para a próximalinha
+     quando nao couberem na tela*/
+
+     justify-content: space-between; /* Distribui os intens e deixa o espaço
+      igual entre eles*/
+
+     padding: 20px;/* Espaçamento  interno em todos os lados das divs(filhos)*/
+
+     max-width: 1200px; /* Define uma largura maxima do container*/
+      margin: 0 auto;       /* Centraliza o containeir horizontakente na tela*/
+
+
+}
+
+.fotos{
+
+    width: 25%; /* Cada foto ocupa ate 30% de  largura do container (div pai)*/
+
+    background-color: rgb(186, 238, 245);
+    border: 1px solid grey;
+    padding: 20px; /* Espaçamento Interno para afastar o conteudo da borda*/
+    margin-bottom: 20px;/* Espaçameno de baixo de cada polaroid para separar os itens*/
+    display: flex;/* Torna o produto tambem  em um container flexbox*/
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.fotos img{
+width:100% ; /* Faz a imagem ocupar toda a largura do produto*/
+height: auto;/* Ajusta a altura proporcionalmente para nao distorecer a foto*/
+}
+
+h1{
+    margin:0 ;
+    text-align: center;
+    
+    color:rgb(149, 231, 242) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fotos h2{
+    margin:0 ;
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fotos p{
+
+    margin:0 ;
+    text-align: center;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+@media(max-width:2000px){
+    .container{
+    width: 60%;
+    }
+}
+
+@media(max-width:768px){
+
+        .container{
+            flex-direction: column;
+            align-items: center;
+        }
+        .fotos{
+            font-size: .5rem;
+        }
+}

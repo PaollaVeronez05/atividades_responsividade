@@ -1,0 +1,103 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background: #771c1c;
+  color: #fff;
+  padding: 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+  
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Layout principal */
+.container {
+  display: flex;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+/* Artigos */
+.artigos {
+  flex: 3;
+}
+
+.artigos article {
+  background: antiquewhite;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+/* Sidebar */
+.sidebar {
+  flex: 1;
+  background: #771c1c;
+  padding: 1rem;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 0.5rem;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    margin-top: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
